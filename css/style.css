@@ -1,7 +1,32 @@
 html{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 85%;
+    margin: auto;
 }
 .radno-iskustvo-item{
     display: block;
     padding: 0.5em;
+}
+
+
+
+
+
+/* footer */
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+}
+.footer-list{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-list li{
+   display: inline-block;
+   padding-right: 15px;
+   padding-top: 3px;
 }
