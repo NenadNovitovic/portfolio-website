@@ -1,23 +1,53 @@
-html{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 85%;
-    margin: auto;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
+:root{
+    --darkest-color: #1d2e38;
+    --dark-color: #466971;
+    --light-color: #f5edd5;
+    --lightest-color: #f1efe7;
+}
+
+html{
+    height: 100%;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--darkest-color);
+    background-color: var(--light-color);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .radno-iskustvo-item{
     display: block;
     padding: 0.5em;
 }
 
+/* licni podaci */
+.section-licni-podaci{
+    background-color: var(--dark-color);
+    color: var(--lightest-color);
+}
 
+/* obrazovanje section */
 
+.section-obrazovanje{
+
+}
 
 
 /* footer */
 .footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-top: 5px;
+    margin-top: auto;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 5px;
 }
 .footer-list{
     text-align: center;
@@ -30,3 +60,23 @@ html{
    padding-right: 15px;
    padding-top: 3px;
 }
+
+@media (min-width: 800px){
+    h1{
+        font-size: 3.5em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+}
+/*
+
+boje https://mycolor.space/?hex=%23F5EDD5&sub=1
+#f5edd5
+#c2ccb5
+#92ac9c
+#688b87
+#466971
+#2f4858
+
+*/
