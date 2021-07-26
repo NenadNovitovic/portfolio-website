@@ -42,7 +42,7 @@ section{
 /* radno iskustvo */
 
 .radno-iskustvo-item{
-    background-color: var(--dark-color);
+    background-image:linear-gradient(var(--darkest-color), var(--dark-color),var(--darkest-color)) ;
     color: var(--lightest-color);
     padding: 1.5em;
     margin: 0.5em;
@@ -50,7 +50,9 @@ section{
     box-shadow: .25em .25em .5em var(--darkest-color);
     
 }
-
+.radno-iskustvo-item:hover{
+    background-image:linear-gradient(var(--darkest-color), var(--darkest-color)) ;
+}
 .radno-iskustvo-item div{
     text-align: center;
 }
@@ -66,7 +68,7 @@ section{
 /* footer */
 .footer{
     margin-top: auto;
-    background-color: var(--dark-color);
+    background-color: var(--darkest-color);
     color: white;
     padding: 5px;
 }
