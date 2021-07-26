@@ -24,16 +24,37 @@ body{
     flex-direction: column;
 }
 
-.radno-iskustvo-item{
-    display: block;
-    padding: 0.5em;
+h2{
+    text-align:center;
 }
+section{
+    padding: 1em;
+}
+
+
 
 /* licni podaci */
 .section-licni-podaci{
     background-color: var(--dark-color);
     color: var(--lightest-color);
 }
+
+/* radno iskustvo */
+
+.radno-iskustvo-item{
+    background-color: var(--dark-color);
+    color: var(--lightest-color);
+    padding: 1.5em;
+    margin: 0.5em;
+    width: 100%;
+    box-shadow: .25em .25em .5em var(--darkest-color);
+    
+}
+
+.radno-iskustvo-item div{
+    text-align: center;
+}
+
 
 /* obrazovanje section */
 
@@ -62,12 +83,25 @@ body{
 }
 
 @media (min-width: 800px){
+    div{
+        font-size: 1.3em;
+    }
     h1{
         font-size: 3.5em;
     }
     h2{
         font-size: 2.5em;
     }
+
+
+    .radno-iskustvo-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+
 }
 /*
 
