@@ -17,7 +17,7 @@ html{
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--darkest-color);
-    background-color: var(--light-color);
+    background-color: var(--lightest-color);
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -41,11 +41,16 @@ section{
 
 /* radno iskustvo */
 
+.section-radno-iskustvo{
+   background-color: #92ac9c;
+}
+
 .radno-iskustvo-item{
     background-image:linear-gradient(var(--darkest-color), var(--dark-color),var(--darkest-color)) ;
     color: var(--lightest-color);
-    padding: 1.5em;
-    margin: 0.5em;
+    padding: 1em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
     width: 100%;
     box-shadow: .25em .25em .5em var(--darkest-color);
     
