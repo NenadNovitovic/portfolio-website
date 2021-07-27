@@ -118,7 +118,6 @@ section{
         font-size: 2.5em;
     }
     section{
-        
         margin-left: 1em;
         margin-right: 1em;
     }
@@ -133,8 +132,12 @@ section{
         flex-wrap: nowrap;
         justify-content: center;
     }
-    
-
+}
+@media(min-width: 1680px){
+    section{
+        margin-left: 5em;
+        margin-right: 5em;
+    }
 }
 /*
 
