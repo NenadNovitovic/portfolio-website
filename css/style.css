@@ -23,6 +23,21 @@ body{
     display: flex;
     flex-direction: column;
 }
+.header-div{
+    /*background-color: var(--darkest-color);
+    color:var(--lightest-color);
+    margin-bottom: 1em;*/
+    padding-left: .65em;
+    display: flex;
+    justify-content: space-between;
+}
+.header-div-contact{
+    padding-right: .55em;
+    padding-top: .50em;
+}
+.header-div-contact ul{
+    list-style: none;
+}
 
 h2{
     text-align:center;
@@ -37,6 +52,9 @@ section{
 .section-licni-podaci{
     background-color: var(--dark-color);
     color: var(--lightest-color);
+    border: .45em solid var(--darkest-color);
+    border-left: none;
+    border-right: none;
 }
 
 /* radno iskustvo */
@@ -94,12 +112,20 @@ section{
         font-size: 1.3em;
     }
     h1{
-        font-size: 3.5em;
+        font-size: 2.85em;
     }
     h2{
         font-size: 2.5em;
     }
+    section{
+        
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 
+    .section-licni-podaci{
+        border: .45em solid var(--darkest-color);
+    }
 
     .radno-iskustvo-container{
         display: flex;
