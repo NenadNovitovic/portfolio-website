@@ -17,6 +17,9 @@ html{
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--darkest-color);
+   /*   background image, needs color changes to work
+    background-image: url("../background4.jpg");
+    background-size: cover;*/
     background-color: var(--lightest-color);
     min-height: 100vh;
     margin: 0;
@@ -57,6 +60,20 @@ section{
     border-right: none;
 }
 
+/* poznavanje tehnologija*/
+
+.section-poznavanje-tehnologija{
+    color:var(--light-color);
+    background-color: var(--darkest-color);
+    border: .55em var(--dark-color) solid;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.section-poznavanje-tehnologija-list li{
+    padding: .40em;
+}
+
 /* radno iskustvo */
 
 .section-radno-iskustvo{
@@ -64,17 +81,18 @@ section{
 }
 
 .radno-iskustvo-item{
-    background-image:linear-gradient(var(--darkest-color), var(--dark-color),var(--darkest-color)) ;
+    background-color: var(--dark-color);
     color: var(--lightest-color);
     padding: 1em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
     width: 100%;
-    box-shadow: .25em .25em .5em var(--darkest-color);
-    
+    box-shadow: inset .25em .25em 1em var(--darkest-color),
+                inset -.25em -.25em 1em var(--darkest-color);
+    transition: background-color 0.2s;
 }
 .radno-iskustvo-item:hover{
-    background-image:linear-gradient(var(--darkest-color), var(--darkest-color)) ;
+    background-color: var(--darkest-color);
 }
 .radno-iskustvo-item div{
     text-align: center;
@@ -83,6 +101,13 @@ section{
 
 /* obrazovanje section */
 
+.section-obrazovanje{
+    background-color: var(--dark-color);
+    color: var(--lightest-color);
+    border: .45em solid var(--darkest-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
 .section-obrazovanje-item{
     margin-bottom: 1.5em;
