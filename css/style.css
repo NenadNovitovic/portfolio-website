@@ -55,9 +55,8 @@ section{
 .section-licni-podaci{
     background-color: var(--dark-color);
     color: var(--lightest-color);
-    border: .45em solid var(--darkest-color);
-    border-left: none;
-    border-right: none;
+    border-top: .45em solid var(--darkest-color);/*
+    border-bottom: .45em solid var(--darkest-color);*/
 }
 
 /* poznavanje tehnologija*/
@@ -65,7 +64,8 @@ section{
 .section-poznavanje-tehnologija{
     color:var(--light-color);
     background-color: var(--darkest-color);
-    border: .55em var(--dark-color) solid;
+    /*    border-top: .55em var(--dark-color) solid;
+    border-bottom: .55em var(--dark-color) solid;*/
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -104,7 +104,8 @@ section{
 .section-obrazovanje{
     background-color: var(--dark-color);
     color: var(--lightest-color);
-    border: .45em solid var(--darkest-color);
+    /*border-top: .45em solid var(--darkest-color);*/
+    border-bottom: .45em solid var(--darkest-color);
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -161,6 +162,10 @@ section{
         border: .45em solid var(--darkest-color);
     }
 
+    .section-poznavanje-tehnologija{
+        border: .45em solid var(--dark-color);
+    }
+
     .radno-iskustvo-container{
         display: flex;
         flex-direction: row;
@@ -169,6 +174,7 @@ section{
     }
     .section-obrazovanje{
         padding-left: 0;
+        border: .45em solid var(--darkest-color);
     }
 }
 @media(min-width: 1680px){
