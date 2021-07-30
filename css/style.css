@@ -9,6 +9,7 @@
     --dark-color: #466971;
     --light-color: #f5edd5;
     --lightest-color: #f1efe7;
+    --light-accent-color:#92ac9c;
 }
 
 html{
@@ -77,7 +78,7 @@ section{
 /* radno iskustvo */
 
 .section-radno-iskustvo{
-   background-color: #92ac9c;
+   background-color: var(--light-accent-color);
 }
 
 .radno-iskustvo-item{
@@ -112,7 +113,8 @@ section{
 
 .section-obrazovanje-item{
     margin-bottom: 1.5em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--darkest-color);
+    padding-bottom: .55em;
 }
 .section-obrazovanje-header{
     font-size: 1.5em;
@@ -181,6 +183,12 @@ section{
     section{
         margin-left: 5em;
         margin-right: 5em;
+    }
+}
+
+@media(max-width:560px){
+    .header-div-contact{
+        display: none;
     }
 }
 /*
