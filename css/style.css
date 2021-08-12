@@ -27,10 +27,21 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+h2{
+    text-align:center;
+}
+section{
+    padding: 1em;
+}
+
+/* header section */
+
 .header-div{
     /*background-color: var(--darkest-color);
     color:var(--lightest-color);
     margin-bottom: 1em;*/
+    align-items: center;
     padding-left: .65em;
     display: flex;
     justify-content: space-between;
@@ -45,13 +56,11 @@ body{
 a:link, a:visited{
     color:var(--darkest-color);
 }
+.contact-dropdown{
+    display: none;
+}
 
-h2{
-    text-align:center;
-}
-section{
-    padding: 1em;
-}
+
 
 
 
@@ -174,7 +183,6 @@ section{
     }
 
     .section-poznavanje-tehnologija{
-        border: .45em solid var(--dark-color);
     }
 
     .radno-iskustvo-container{
@@ -205,9 +213,41 @@ section{
 }
 
 @media(max-width:565px){
-    .header-div-contact{
+    .header-div-contact ul{
         display: none;
     }
+    
+    .contact-dropdown-button{
+        background-color: var(--light-color);
+        display: inline-block;
+        border-bottom: .5px solid var(--dark-color);
+        font-size: 1.2em;
+        text-align: center;
+        padding: .45em;
+    }
+    .contact-dropdown{
+        position: relative;
+        display: block;
+        float:right;
+    }
+    .contact-dropdown-content{
+        display: none;
+        position: absolute;
+        right:0;
+        background-color: var(--light-color);
+        color: var(--light-color);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .contact-dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .contact-dropdown-content a:hover {background-color: var(--light-accent-color);}
+    .contact-dropdown:hover .contact-dropdown-content {display: block;}
+    .contact-dropdown:hover .contact-dropdown-button {background-color: var(--light-accent-color);}
 }
 /*
 
